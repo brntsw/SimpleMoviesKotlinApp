@@ -9,7 +9,7 @@ It will use the following:
 * `` Kotlin `` [https://kotlinlang.org/]
 * `` Clean Architecture `` [https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html]
 * `` Architecture components `` [https://developer.android.com/topic/libraries/architecture/]
-* `` Dagger2 `` [https://github.com/google/dagger]
+* `` Dagger 2 `` [https://github.com/google/dagger]
 * `` RxJava 2 `` [https://github.com/ReactiveX/RxJava]
 * `` Data binding `` [https://developer.android.com/topic/libraries/data-binding/?hl=pt-br]
 * `` Retrofit `` [https://square.github.io/retrofit/]
