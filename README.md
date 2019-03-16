@@ -10,10 +10,12 @@ It will use the following:
 * `` Clean Architecture `` [https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html]
 * `` Architecture components `` [https://developer.android.com/topic/libraries/architecture/]
 * `` Dagger 2 `` [https://github.com/google/dagger]
-* `` RxJava 2 `` [https://github.com/ReactiveX/RxJava]
+* `` RxKotlin `` [https://github.com/ReactiveX/RxKotlin]
+* `` RxAndroid `` [https://github.com/ReactiveX/RxAndroid]
 * `` Data binding `` [https://developer.android.com/topic/libraries/data-binding/?hl=pt-br]
 * `` Retrofit `` [https://square.github.io/retrofit/]
 * `` Gson `` [https://github.com/google/gson]
+* `` Timber `` [https://github.com/JakeWharton/timber]
 * `` Glide `` [https://github.com/bumptech/glide]
 
 Its goal is to just provide a simple way of implementing a project from scratch using a boilerplate that is customizable. 
