@@ -23,4 +23,5 @@ It will use the following:
 
 Its goal is to just provide a simple way of implementing a project from scratch using a boilerplate that is customizable. 
 The app has started to be implemented using TDD (Test Driven Development), for more details check the following video: [https://www.youtube.com/watch?v=qkblc5WRn-U]
+
 All the layers contain tests, depending on which is the layer it could contain Unit testing, UI testing or both.
