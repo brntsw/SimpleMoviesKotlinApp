@@ -1,6 +1,6 @@
 package com.bruno.movieapp.clean_movies_kotlin_app
 
-import org.junit.Assert.*
+import org.junit.Assert.assertEquals
 import org.junit.jupiter.api.Nested
 import org.junit.jupiter.api.Test
 
