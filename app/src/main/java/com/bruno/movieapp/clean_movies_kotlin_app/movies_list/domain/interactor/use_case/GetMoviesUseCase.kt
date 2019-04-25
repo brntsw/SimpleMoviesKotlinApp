@@ -2,11 +2,11 @@ package com.bruno.movieapp.clean_movies_kotlin_app.movies_list.domain.interactor
 
 import com.bruno.movieapp.clean_movies_kotlin_app.movies_list.domain.model.Movie
 import com.bruno.movieapp.clean_movies_kotlin_app.movies_list.domain.repository.MoviesRepository
-import io.reactivex.Single
+import io.reactivex.Flowable
 
 class GetMoviesUseCase(private val repository: MoviesRepository) {
 
-    fun getSingleMovies(): Single<List<Movie>>{
+    fun getSingleMovies(): Flowable<List<Movie>>{
         return repository.getMovies()
     }
 }

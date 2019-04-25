@@ -1,4 +1,4 @@
-package com.bruno.movieapp.clean_movies_kotlin_app.movies_list.domain
+package com.bruno.movieapp.clean_movies_kotlin_app.movies_list.domain.use_case
 
 import com.bruno.movieapp.clean_movies_kotlin_app.movies_list.domain.model.Movie
 import com.bruno.movieapp.clean_movies_kotlin_app.movies_list.domain.repository.MoviesRepository
@@ -40,7 +40,7 @@ class MoviesTest {
     @Test
     fun `Build use case calling the repository`(){
         getMoviesUseCase.getSingleMovies()
-        verify(repository).getMovies()
+        verify(repository).getMovies() //TODO solve -> no answer found for: MoviesRepository(repository#1).getMovies() || Implement the repository in order to obtain data
     }
 
     private fun fakeMovies(): List<Movie> {
