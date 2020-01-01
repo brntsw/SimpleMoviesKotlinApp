@@ -44,29 +44,25 @@ class MoviesTest {
     }
 
     private fun fakeMovies(): List<Movie> {
-        return Arrays.asList(
-            Movie(
+        return listOf(Movie(
                 "Shazam!",
                 listOf(28, 35, 12, 14),
                 "en",
                 LocalDate.parse("2019-03-01"),
                 7.3
-            ),
-            Movie(
+            ), Movie(
                 "Captain Marvel",
                 listOf(28, 12, 878),
                 "en",
                 LocalDate.parse("2019-03-06"),
                 7.2
-            ),
-            Movie(
+            ), Movie(
                 "How to Train Your Dragon: The Hidden World",
                 listOf(16, 10751, 12),
                 "en",
                 LocalDate.parse("2019-01-03"),
                 7.6
-            )
-        )
+            ))
     }
 
 }

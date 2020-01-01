@@ -18,20 +18,14 @@ class MovieCacheImpl(private val entityMapper: MovieEntityMapper) : MovieCache {
     }
 
     /** This is the fake database **/
-    var fakeDatabase = ArrayList<List<Pair<String, Any>>>()
+    private var fakeDatabase = ArrayList<List<Pair<String, Any>>>()
 
     init {
         //Clear each time it is initialized to not duplicating values
         fakeDatabase.clear()
 
         fakeDatabase.add(
-            Arrays.asList(
-                Pair(FIELD_MOVIE_NAME, "Shazam!"),
-                Pair(FIELD_GENRES, listOf(28, 35, 12, 14)),
-                Pair(FIELD_ORIGINAL_LANGUAGE, "en"),
-                Pair(FIELD_RELEASE_DATE, "2019-03-01"),
-                Pair(FIELD_RATING, 7.3)
-            )
+            listOf(Pair(FIELD_MOVIE_NAME, "Shazam!"), Pair(FIELD_GENRES, listOf(28, 35, 12, 14)), Pair(FIELD_ORIGINAL_LANGUAGE, "en"), Pair(FIELD_RELEASE_DATE, "2019-03-01"), Pair(FIELD_RATING, 7.3))
         )
 
     }
@@ -39,13 +33,7 @@ class MovieCacheImpl(private val entityMapper: MovieEntityMapper) : MovieCache {
     override fun saveMovies(movies: List<MovieEntity>) {
         movies.forEach { movie ->
             fakeDatabase.add(
-                Arrays.asList(
-                    Pair(FIELD_MOVIE_NAME, movie.movieName),
-                    Pair(FIELD_GENRES, movie.genres),
-                    Pair(FIELD_ORIGINAL_LANGUAGE, movie.originalLanguage),
-                    Pair(FIELD_RELEASE_DATE, movie.releaseDate),
-                    Pair(FIELD_RATING, movie.rating)
-                )
+                listOf(Pair(FIELD_MOVIE_NAME, movie.movieName), Pair(FIELD_GENRES, movie.genres), Pair(FIELD_ORIGINAL_LANGUAGE, movie.originalLanguage), Pair(FIELD_RELEASE_DATE, movie.releaseDate), Pair(FIELD_RATING, movie.rating))
             )
         }
     }
